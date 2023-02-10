@@ -1,0 +1,52 @@
+form {
+	display: flex;
+	flex-direction: column;
+	margin-right: 100px;
+}
+.text-input {
+	border-radius: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	outline: none;
+	padding: 0 10px;
+}
+.number-input {
+	border-radius: 20px;
+	height: 20px;
+	margin-bottom: 10px;
+	outline: none;
+	padding: 0 0 0 10px;
+	width: 60px;
+}
+.output {
+	display: flex;
+	gap: 20px;
+}
+form button {
+	background: #1aac83;
+	border: 0;
+	color: #fff;
+	padding: 10px;
+	font-family: "Poppins";
+	border-radius: 4px;
+	cursor: pointer;
+}
+div.error {
+	padding: 10px;
+	background: #ffefef;
+	border: 1px solid var(--error);
+	color: var(--error);
+	border-radius: 4px;
+	margin: 20px 0;
+}
+
+input.error {
+	border: 1px solid #c43737;
+}
+
+@media screen and (max-width: 768px) {
+	form {
+		width: 200px;
+		margin: 0 auto 0 auto;
+	}
+}

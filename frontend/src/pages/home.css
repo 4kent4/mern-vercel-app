@@ -1,0 +1,60 @@
+.home {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+.workouts {
+	display: flex;
+	flex-wrap: wrap;
+}
+.workout-details {
+	background: #fff;
+	border-radius: 10px;
+	min-width: 250px;
+	margin: 0 20px 20px 0px;
+	padding: 20px;
+	position: relative;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+.workout-details h4 {
+	margin: 0 0 10px 0;
+	font-size: 1.2em;
+	color: var(--primary);
+}
+.workout-details p {
+	margin: 0;
+	font-size: 0.9em;
+	color: #555;
+}
+.workout-details span {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	padding: 2px;
+	border-radius: 50%;
+	color: #333;
+}
+
+.workout-details span:hover {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	padding: 2px;
+	border-radius: 50%;
+	color: #c70c0c;
+}
+
+@media screen and (max-width: 768px) {
+	.home {
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+	.workouts {
+		justify-content: center;
+	}
+	.workout-details {
+		min-width: 300px;
+	}
+}
